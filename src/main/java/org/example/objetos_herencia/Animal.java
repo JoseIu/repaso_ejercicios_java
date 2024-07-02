@@ -5,17 +5,21 @@ public class Animal {
     private String nombre;
     private int edad;
     private String raza;
+    private  static int aniamCount;
 
     public Animal(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
         this.raza = "";
+        aniamCount++;
     }
 
     public Animal(String nombre, int edad, String raza) {
         this.nombre = nombre;
         this.edad = edad;
         this.raza = raza;
+        aniamCount++;
+
     }
 
     public String darInfo (){
@@ -25,6 +29,11 @@ public class Animal {
     public String hacerSonido(){
 
         return  "Grrrrrr";
+    }
+
+    public  static int getAniamCount(){
+
+        return aniamCount;
     }
 
     public String getRaza() {

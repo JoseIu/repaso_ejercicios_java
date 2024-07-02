@@ -13,5 +13,7 @@ public class AnimalApp {
         System.out.println("El animal gato ahce al sonido de: " + gato.hacerSonido());
         System.out.println("El animal perro hace el sonido de:" + perro.hacerSonido());
 
+        System.out.println("El total de animales creados es de: " + Animal.getAniamCount());
+
     }
 }
